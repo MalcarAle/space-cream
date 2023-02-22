@@ -17,7 +17,7 @@ Desafio de estudos sobre GRID, @Keyframes e variaveis
 <br>
 
 <p align="center">
-  <img alt="projeto Space Cream" src=".github/preview.jpg" width="40%">
+  <img alt="projeto Space Cream" src=".github/Preview.jpg" width="40%">
 </p>
 
 ## 🚀 Tecnologias
