@@ -19,7 +19,9 @@
   --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
 }
 .page{
-  max-width: 100%;
+  max-width: 38.4rem;
+  margin: 0 auto;
+
 }
 body{
   font-family: var(--ff-text);
@@ -34,6 +36,7 @@ header{
   display: grid;
   place-items: center;
   width: 100%;
+
 }
 
 header h1{
@@ -49,12 +52,10 @@ header h1{
   margin-bottom: 2.9rem;
   padding: 0.8rem;
   width: 100%;
+
   text-align: center;
 }
 
-header img{
-  padding: 3.2rem 12.3rem;
-}
 
 
 main{
