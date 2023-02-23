@@ -3,10 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+.desktop-page {
+  display: none;
+}
 
 :root {
   --ff-text: "Palanquin", sans-serif;
   --ff-title: "Staatliches", sans-serif;
+  --ff-desktop: "Roboto", sans-serif;
 
   --bg-primary: #8e9aaf;
   --bg-secondary: #eff1ff;
@@ -18,7 +22,7 @@
   --fs-card: 2rem;
   --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
 }
-.page {
+.mobile {
   min-width: 38.4rem;
   margin: 0 auto;
 }
@@ -94,6 +98,14 @@ main p {
   height: fit-content;
 }
 
+.cards .card img {
+  width: 32rem;
+  border-radius: 3rem;
+  object-fit: cover;
+
+  transition: 200ms;
+}
+
 .cards .card h2 {
   font-family: var(--ff-title);
   font-size: var(--fs-card);
@@ -119,10 +131,11 @@ main p {
   animation: uptodown 900ms 350ms backwards;
 }
 
-.cards .card img {
-  width: 100%;
-  border-radius: 2rem;
-  object-fit: cover;
+
+.card img:hover{
+  transition: 250ms;
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 @keyframes downtoup {
@@ -144,5 +157,147 @@ main p {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+    
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 1280px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop-page {
+    display: initial;
+  }
+  .desktop-page {
+    width: 128rem;
+    height: 80rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 30rem;
+  }
+
+  main > div > div:nth-child(1),
+  main > div > div:nth-child(3) {
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 128rem;
+    height: 100rem;
+    
+    padding: 0;
+    margin: 0 auto;
+    background: #ffffff;
+  }
+
+  header {
+    width: 80.7rem;
+    height: 100rem; 
+  }
+
+  header p {
+    width: 27.5rem;
+    height: 26.2rem;
+
+    margin: 3.2rem 4.8rem 12.5rem;
+
+    font-family: var(--ff-desktop);
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  main > div > div:nth-child(1) > img,
+  main > div > div:nth-child(3) > img,
+  main > div > div:nth-child(5) > img {
+    width: 22rem;
+    border-radius: 2rem;
+  }
+
+  main > div > div:nth-child(2) > img,
+  main > div > div:nth-child(4) > img,
+  main > div > div:nth-child(6) > img {
+    width: 22rem;
+    border-radius: 2rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-areas: "A B E" "D B F" "D C F";
+    gap: 3.2rem;
+    padding: 8.4rem 8.1rem ;
+  }
+
+  main > div > div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main > div > div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main > div > div:nth-child(3) {
+    grid-area: C;
+  }
+
+  main > div > div:nth-child(4) {
+    grid-area: D;
+  }
+
+  main > div > div:nth-child(5) {
+    grid-area: E;
+  }
+
+  main > div > div:nth-child(6) {
+    grid-area: F;
+  }
+
+  .card h2 {
+    top: 7rem;
+    right: 7rem;
+
+    width: 80rem;
+
+    font-size: 15rem;
+  }
+  .footer{
+    width: 59.2rem;
+    height: 2.8rem;
+  
+  
+  
+    font-family: var(--ff-text);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    
+    text-align: center;
+    
+    color: #4A4E69;
+
+  }
+  .footer span{
+    font-weight: bold;
   }
 }
