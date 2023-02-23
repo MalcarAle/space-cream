@@ -60,6 +60,7 @@ header h1 {
 
 header img {
   padding: 3rem;
+  animation: logo-rotate 1.25s 200ms ease backwards;
 }
 
 main {
@@ -170,6 +171,16 @@ main p {
     opacity: 0.75;
     transform: scale(1);
   }
+}
+
+@keyframes logo-rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+    
+  100% {
+    transform: rotateY(360deg);
+  } 
 }
 
 @media (min-width: 1280px) {
