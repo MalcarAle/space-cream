@@ -1,7 +1,7 @@
-<h1 align="center"> Projeto - Space Cream </h1>
+<h1 align="center"> Project - Space Cream </h1>
 
 <p align="center">
-Desafio de estudos sobre GRID, @Keyframes e variaveis
+Study challenge about GRID, @Keyframes and variables
 </p>
 
 <p align="center">
@@ -17,20 +17,20 @@ Desafio de estudos sobre GRID, @Keyframes e variaveis
 <br>
 
 <p align="center">
-  <img alt="projeto Space Cream" src=".github/Preview.jpg" width="40%">
+  <img alt="Project Space Cream" src=".github/Preview.jpg" width="40%">
 </p>
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
-- HTML e CSS
-- Git e Github
+- HTML and CSS
+- Git and Github
 - Figma
 
 ## 💻 Projeto
 
-O DevLinks é um agregador de links para usar como cartão de visitas online.
+This site is just for studies, applying what was learned in class.
 
 - [Acesse o projeto finalizado, online](https://malcarale.github.io/space-cream)
 
